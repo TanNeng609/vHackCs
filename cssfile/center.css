@@ -1,0 +1,88 @@
+.center{
+    display: flex;
+    
+   
+}
+
+.button{
+    flex-direction: column;
+    
+}
+
+.theme{ 
+    text-align: center;
+    top: 0;
+    font-family: skranji;
+    color: #EFF68B;
+    position: absolute;
+    margin-top: 150px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    left: 0;
+    right: 0;
+    font-size: 48px;}
+
+.center-button{
+    top: 0;
+    position: absolute;
+    margin-top: 200px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+ 
+    font-size: 80px;
+    font-weight: 12px;
+    font-family: Arial;
+   
+}
+
+@media (min-width: 1024px) {
+    .center-button{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+
+
+.button2nd,
+.button3rd{
+    background-color: #131e23;
+    border: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.1s;
+    cursor: pointer;
+    
+}
+
+.button3rd:hover,
+.button2nd:hover{
+    color: lightblue;
+}
+.button3rd:active,
+.button2nd:active{
+    font-size: 17px;
+}
+
+.endButton{
+    top: 0;
+    position: absolute;
+    margin-top: 200px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    left: 0;
+    right: 0;
+    font-size: 60px;
+}
+
+
+@media(max-width:1500px) {
+    .button2nd,
+    .button3rd{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}

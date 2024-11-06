@@ -1,0 +1,117 @@
+.content{
+    top: 0;
+    display: grid;
+    position: absolute;
+    margin-top: 600px;
+    right: 0;
+    left: 0;
+    
+  
+}
+
+.student{
+  padding-bottom: 80px;
+   display: flex;
+   flex-direction: column; /* Align items vertically */
+   align-items: center; /* Center items horizontally */
+   padding-top: 50px; /* Optional, to add some space at the top */
+   
+
+  
+
+}
+
+.profile{
+    background-color: white;
+    position: relative;
+    width: 180px;
+    height: 110px;
+    border-radius: 5px;
+
+}
+
+.student-picture {
+    position: absolute;
+    bottom:  0;
+    width: 130px; /* Set the desired width */
+    background-image: url('profile/qianyun.webp'); /* Specify the image URL */
+    background-size: 50%; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the container */
+    overflow: hidden; /* Ensures content does not overflow the container */
+    padding-left: 25px;
+
+ 
+}
+
+.student-picture:hover{
+    width: 140px;
+    padding-left: 20px;
+}
+
+.stat{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    justify-content: center;
+   
+
+   
+}
+
+.icons{
+        display: flex;
+      justify-content: center;
+        
+        margin-top: 10px;
+        
+        
+}
+
+.icon{
+    width: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+}
+
+@media(min-width:940px){
+    .content{
+        grid-template-columns: 1fr 1fr 1fr  ;
+    }
+}
+
+@media (max-width:939px){
+    .content{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+
+
+.toggle-checkbox{
+   display:none ;
+}
+
+
+#toggle-all:checked~ #Top,
+#toggle-all:checked~ #Programme,
+#toggle-all:checked~ #Public,
+#toggle-all:checked~ #Publicity,
+#toggle-all:checked~ #Sponsorship,
+#toggle-all:checked~ #Logistics,
+#toggle-all:checked~ #Technicial,
+#toggle-all:checked~ #Design,
+#toggle-top-committee:checked ~ #Top,
+#toggle-programme:checked ~ #Programme,
+#toggle-public:checked ~ #Public,
+#toggle-publicity:checked ~ #Publicity,
+#toggle-sponsorship:checked ~ #Sponsorship,
+#toggle-logistics:checked ~ #Logistics,
+#toggle-technical:checked ~ #Technicial,
+#toggle-design:checked ~ #Design {
+    display: grid !important ;
+    
+}
